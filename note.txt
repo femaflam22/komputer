@@ -1,0 +1,10 @@
+1. undefined $computers 
+2. menambahkan angka urutan
+3. menambahkan button kembali yang mengarah ke halaman index
+4. menambahkan tulisan error validasi di create
+5. menyelesaikan error edit undefined $data
+6. selected sesuai data
+7. menyelesaikan error method patch
+8. undefined redirect update
+9. menyelesaikan error undefined method delete controller
+10. menyelesaikan error where destroy

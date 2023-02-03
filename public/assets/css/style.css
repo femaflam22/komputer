@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;700&display=swap');
+body{
+	background: rgba(0,0,0,.075);
+	}
+.container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.col-md-4{
+	background: #F9F8F4;
+	text-align: center;
+	border-radius: 12px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.logo{
+	text-align: left!important;
+	transform: translate(-40px,20px);
+	font-weight: 1000!important;
+	font-size: 8px!important;
+ 	font-family: 'Abril Fatface', cursive!important;
+}
+.logo span{
+	font-size: 20px;
+}
+.image{
+	margin-top: 60%;
+}
+h6.mt-3{
+	font-weight: bold;
+}
+.col-md-4 p{
+	font-size: 12px;
+	line-height: 15px;
+	padding: 0 60px 0 60px;
+	color: #0000009e;
+	font-weight: 500;
+}
+.col-md-8{
+	background: #fff;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	padding-bottom: 80px;
+}
+p.mb-0{
+	color: #6C6D6F;
+	font-size: 10px;
+	font-weight: bold;
+}
+strong{
+	font-size: 12px;
+}
+.fa-phone-volume{
+	margin-right: 4px;
+	font-size: 12px;
+}
+form.information{
+	margin: 0 280px 0 100px;
+}
+h4.form-heading{
+	font-weight: bold;
+	font-size: 23px!important
+}
+p.form-para{
+	font-size: 13px;
+	font-weight: 500;
+	color: #0000009e;
+	line-height: 17px;
+}
+p.form-para::after{
+	content: ".";
+	font-size: 0;
+	display: block;
+	width: 8%;
+	height: 4px;
+	background: #6200EA;
+	margin: 10px 0;
+	transform: translateX(-10px);
+}
+.form-group {
+    position: relative;
+    margin-bottom: 0.5rem;
+    margin-right: 90px;
+}
+.form-control {
+    border-radius: 0;
+    outline: 0;
+}
+.form-control:focus{
+	box-shadow: none;
+    border-radius: 0;
+    border: 1px solid #dae0e5;;
+}
+.form-control-placeholder {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    transition: all 200ms;
+    opacity: 0.5;
+    font-size: 75%;
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 60%;
+    transform: translate3d(0, -75%, 0);
+    opacity: 1;
+    top: 12px;
+}
+.btn-primary{
+	border: none!important;
+	background: #6200EA!important;
+	height: 46px!important;
+}
+.btn-primary span{
+	color: #E5DDFF;
+	font-size: 10px;
+}
+.terms{
+	font-size: 10px;
+	color: #0000009e;
+	font-weight: 500;
+}
+.terms a{
+	color: #6200EA!important;
+}
+
+
+@media screen and (max-width: 767px){
+.mycol1{
+		border-radius: 0;
+		border-top-right-radius: 12px;
+		border-top-left-radius: 12px;
+		padding: 50px 50px 50px 50px;
+	}
+.image{
+	margin-top: 0;
+}
+.mycol2{
+		border-radius: 0;
+		border-bottom-right-radius: 12px;
+		border-bottom-left-radius: 12px;
+		text-align: center;
+		padding-bottom: 40px;
+	}
+form.information{
+	margin: 10px 10px 0 10px;
+}
+	.form-group {
+    margin: 10px 10px 0 10px;
+}
+.logo{
+	transform: translate(-90px,-30px);
+}
+}
+@media screen and (min-width: 767px)
+{
+	form.information{
+	margin: 0 200px 0 50px;
+}
+	.form-group {
+    margin-right: 40px;
+}
+}
+@media screen and (min-width: 1200px){
+	form.information{
+	margin: 0 280px 0 100px;
+}
+	.form-group {
+    margin-bottom: 0.5rem;
+    margin-right: 80px;
+}
+}
+
+.container.content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container.content .table-wrap {
+    overflow-x: auto;
+}
+
+.container.content .table-wrap::-webkit-scrollbar {
+    height: 5px;
+}
+
+.container.content .table-wrap::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #5D7ECD, #0C91E6);
+}
+
+
+.table>:not(caption)>*>* {
+    padding: 2rem 0.5rem;
+}
+
+.table tbody td input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.table tbody td input[type="checkbox"]:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f00c";
+    color: #fff;
+    font-size: 15px;
+    display: none;
+}
+
+.table tbody td input[type="checkbox"]:checked,
+.table tbody td input[type="checkbox"]:checked:hover {
+    background-color: #40bfc1;
+}
+
+.table tbody td input[type="checkbox"]:checked::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table tbody td input[type="checkbox"]:hover {
+    background-color: #ddd;
+}
+
+.table tbody td .img-container {
+    width: 50px;
+    height: 50px;
+}
+
+.table tbody td .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.table tbody,
+.table thead {
+    background-color: #fff;
+}
+
+.table tbody tr td:nth-of-type(1) {
+    text-align: center;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.table tbody tr td:nth-of-type(2) {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+
+.table tbody tr td:nth-of-type(3) {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.table tbody tr td:nth-of-type(4) {
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.table tbody tr td:nth-of-type(5) {
+    min-width: 50px;
+    max-width: 50px;
+}
+
+.table tbody tr {
+    box-shadow: 0px 2px 3px #1f1f1f1a;
+}
+
+.table thead tr {
+    border-bottom: 4px solid #E1F5FE;
+}
+
+.table tbody td .active,
+.table tbody td .waiting {
+    background-color: #B9F6CA;
+    color: #388E3C;
+    font-weight: 600;
+    padding: 1px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.table tbody td .waiting {
+    background-color: #FFECB3;
+    color: #FFA000;
+}
+
+.table tbody td .active .circle,
+.table tbody td .waiting .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #388E3C;
+}
+
+.table tbody td .waiting .circle {
+    background-color: #FFA000;
+}
+
+.table tbody td .fa-times {
+    color: #D32F2F;
+    font-size: 0.9rem;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fs-09 {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.text-grey {
+    color: #a8a8a8 !important;
+}
+
+
+@media(min-width: 992px) {
+    .container .table-wrap {
+        overflow: hidden;
+    }
+}
