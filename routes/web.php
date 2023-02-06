@@ -20,3 +20,7 @@ Route::post('/store', [ComputerController::class, 'store'])->name('store');
 Route::get('/edit/{id}', [ComputerController::class, 'edit'])->name('edit');
 Route::patch('/update/{id}', [ComputerController::class, 'update'])->name('update');
 Route::delete('/delete/{id}', [ComputerController::class, 'delete'])->name('delete');
+
+Route::get('/login', [ComputerController::class, 'login'])->name('login');
+Route::post('/auth', [ComputerController::class, 'auth'])->name('auth');
+Route::get('/logout', [ComputerController::class, 'logout'])->name('logout');

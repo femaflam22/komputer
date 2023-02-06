@@ -8,3 +8,6 @@
 8. undefined redirect update
 9. menyelesaikan error undefined method delete controller
 10. menyelesaikan error where destroy
+11. membuat middleware : file auth error
+12. menambahkan middleware di route
+13. menyelesaikan error kernel middleware

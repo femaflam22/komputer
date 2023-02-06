@@ -4,9 +4,38 @@ namespace App\Http\Controllers;
 
 use App\Models\Computer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ComputerController extends Controller
 {
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function auth(Request $request)
+    {
+        // array ke2 sbgai custom msg
+        $request->validate([
+            'email' => 'required|exists:users,email',
+            'password' => 'required',
+        ]);
+
+        $user = $request->only('email', 'password');
+        // authentication
+        if (Auth::attempt($user)) {
+            return redirect()->route('index');
+        }else {
+            return redirect()->back()->with('error', 'Gagal login, silahkan cek dan coba lagi!');
+        }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
+
     public function index()
     {
         $computers = Computer::orderBy('lab')->get();

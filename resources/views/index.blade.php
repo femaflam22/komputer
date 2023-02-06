@@ -20,6 +20,7 @@
         @endif
         <div class="d-flex justify-content-end mb-3">
             <a href="{{route('create')}}" class="btn btn-primary">Create</a>
+            <a href="{{route('logout')}}" class="btn btn-warning ml-4">Logout</a>
         </div>
         <table class="table table-borderless table-responsive">
             <thead class="px-3">
